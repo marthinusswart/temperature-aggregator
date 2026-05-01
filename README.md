@@ -47,3 +47,20 @@ Then, execute the test runner:
 ```bash
 pytest
 ```
+
+## Checking Tests Coverage
+
+1. Install pytest-cov
+
+```bash
+pip install pytest-cov
+```
+
+2. Run Tests with Coverage
+To run your tests and see a coverage report in your terminal, use the --cov flag followed by the name of the directory or package you want to measure (in your case, the app directory):
+
+```bash
+pytest --cov=app
+```
+
+This will run all your tests in the tests/ folder and output a nice table in your console showing the percentage of lines covered for each file in the app package.
